@@ -8,7 +8,7 @@ export const COMPANY = {
   emailHref: 'mailto:hello@alpenglowak.com',
   address: 'Anchorage, Alaska',
   url: 'https://alpenglowak.com',
-  logo: '/alpenglow-logo.svg',
+  logo: '/alpenglow-logo.png',
   frontierConnectLogo: '/frontier-connect-logo.svg',
   social: {
     facebook: null as string | null,
