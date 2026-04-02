@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { COMPANY } from '../../config';
 
 export default function FrontierConnect() {
   return (
@@ -17,14 +16,21 @@ export default function FrontierConnect() {
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="relative img-zoom"
+              className="relative"
             >
-              <img
-                src={COMPANY.frontierConnectLogo}
-                alt="AK Frontier Connect"
-                className="w-64 h-auto drop-shadow-2xl"
-              />
-              <div className="absolute -top-4 -right-4 bg-frontier-yellow text-frontier-blue font-bold px-4 py-1 rounded-full text-sm transform rotate-12">
+              <div className="w-48 h-48 bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl flex flex-col items-center justify-center gap-3 p-6">
+                <div className="w-16 h-16 bg-frontier-yellow rounded-2xl flex items-center justify-center">
+                  <svg viewBox="0 0 32 32" className="w-10 h-10">
+                    <polygon points="16,4 6,28 26,28" fill="#FABC2A"/>
+                    <polygon points="20,14 12,28 28,28" fill="#1F3F32"/>
+                  </svg>
+                </div>
+                <div className="text-center">
+                  <p className="font-display font-bold text-lg text-white leading-tight">Frontier</p>
+                  <p className="font-display font-semibold text-white/80 leading-tight">Connect</p>
+                </div>
+              </div>
+              <div className="absolute -top-3 -right-3 bg-frontier-yellow text-frontier-blue font-bold px-4 py-1.5 rounded-full text-xs tracking-wide uppercase transform rotate-12 shadow-lg">
                 Exclusive
               </div>
             </motion.div>

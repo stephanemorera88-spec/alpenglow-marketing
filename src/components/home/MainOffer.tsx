@@ -7,36 +7,34 @@ export default function MainOffer() {
     <section className="py-24 bg-alpine-mist">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-1/2">
-            <div className="relative img-zoom">
+          <div className="lg:w-1/2 space-y-6">
+            {/* Image */}
+            <div className="img-zoom rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80"
                 alt="Done-for-you social media posting for local businesses"
-                className="rounded-3xl shadow-2xl w-full h-auto"
+                className="w-full h-auto"
                 loading="lazy"
               />
-              <motion.div
-                initial={{ x: 50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="absolute -bottom-10 -right-10 bg-white p-8 rounded-2xl shadow-xl max-w-xs hidden md:block border-t-4 border-morning-glow animate-pulse-glow"
-              >
-                <h4 className="font-display font-bold text-xl mb-2 text-forest-green">Special Offer</h4>
-                <p className="text-gray-600 mb-4">Get 2 Free Sample Posts with custom captions and image concepts.</p>
-                <Link to="/contact" className="text-forest-green font-bold flex items-center gap-2 hover:gap-3 transition-all">
-                  Claim Now <CheckCircle2 size={18} />
-                </Link>
-              </motion.div>
             </div>
 
-            {/* Mobile-only offer card */}
-            <div className="md:hidden bg-white rounded-2xl p-6 shadow-lg border-t-4 border-morning-glow -mt-8 relative z-10 mx-4">
-              <p className="text-sm font-bold text-morning-glow mb-1">Special Offer</p>
-              <p className="text-deep-pine font-semibold text-lg">Get 2 Free Sample Posts</p>
-              <Link to="/contact" className="inline-block mt-3 text-forest-green font-bold text-sm hover:text-morning-glow transition-colors">
-                Claim Now &rarr;
-              </Link>
-            </div>
+            {/* Offer card — separate from image */}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border-t-4 border-morning-glow animate-pulse-glow"
+            >
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                  <h4 className="font-display font-bold text-xl text-forest-green mb-1">Special Offer</h4>
+                  <p className="text-gray-600">Get 2 Free Sample Posts with custom captions and image concepts.</p>
+                </div>
+                <Link to="/contact" className="btn-secondary bg-morning-glow text-deep-pine px-6 py-3 rounded-full font-bold whitespace-nowrap hover:bg-opacity-90 transition-all inline-flex items-center gap-2 shrink-0">
+                  Claim Now <CheckCircle2 size={18} />
+                </Link>
+              </div>
+            </motion.div>
           </div>
 
           <div className="lg:w-1/2">
