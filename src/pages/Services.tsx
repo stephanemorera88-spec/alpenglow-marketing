@@ -8,7 +8,7 @@ import { COMPANY } from '../config';
 const SERVICE_IMAGES: Record<string, string> = {
   gbp: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80',
   aeo: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80',
-  seo: 'https://images.unsplash.com/photo-1432888622747-4eb9a8f5f07d?w=800&q=80',
+  seo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
   web: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80',
   lead: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80',
   'missed-call': 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
