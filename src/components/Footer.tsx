@@ -15,7 +15,7 @@ export default function Footer() {
               <img
                 src={COMPANY.logo}
                 alt="Alpenglow Marketing"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
               <span className="font-display font-bold text-2xl tracking-tight">Alpenglow</span>
             </Link>
