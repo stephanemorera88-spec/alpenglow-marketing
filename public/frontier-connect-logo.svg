@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <rect width="48" height="48" rx="10" fill="#2F3580"/>
+  <polygon points="24,8 12,38 36,38" fill="#FABC2A"/>
+  <polygon points="30,18 20,38 40,38" fill="#1F3F32"/>
+  <circle cx="24" cy="12" r="3" fill="#FABC2A" opacity="0.4"/>
+  <text x="58" y="22" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="16" fill="#2F3580" letter-spacing="-0.3">Frontier</text>
+  <text x="58" y="40" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="14" fill="#2F3580" letter-spacing="-0.2">Connect</text>
+</svg>

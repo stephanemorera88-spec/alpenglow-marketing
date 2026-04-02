@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Mountain icon -->
+  <polygon points="8,40 24,8 40,40" fill="#C9B27C"/>
+  <polygon points="28,22 20,40 40,40" fill="#2F5D4A"/>
+  <polygon points="16,28 8,40 24,40" fill="#1F3F32" opacity="0.6"/>
+  <!-- Glow effect -->
+  <circle cx="24" cy="12" r="3" fill="#C9B27C" opacity="0.3"/>
+  <!-- Text -->
+  <text x="50" y="32" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="24" fill="#1F3F32" letter-spacing="-0.5">Alpenglow</text>
+</svg>
