@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Home } from 'lucide-react';
+import SEO from '../seo';
 
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-alpine-mist px-4">
+      <SEO
+        title="Page Not Found | Alpenglow Marketing"
+        description="The page you are looking for could not be found."
+        canonical="/404"
+      />
       <div className="text-center max-w-lg">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -18,7 +24,7 @@ export default function NotFound() {
           </p>
           <Link
             to="/"
-            className="inline-flex items-center gap-2 bg-forest-green text-white px-8 py-4 rounded-full font-bold hover:bg-deep-pine transition-all shadow-lg shadow-forest-green/20"
+            className="btn-primary inline-flex items-center gap-2 bg-forest-green text-white px-8 py-4 rounded-full font-bold hover:bg-deep-pine transition-all shadow-lg shadow-forest-green/20"
           >
             <Home size={20} /> Back to Homepage
           </Link>

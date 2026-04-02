@@ -7,7 +7,7 @@ const localBusinessSchema = {
   '@id': `${COMPANY.url}/#business`,
   name: COMPANY.name,
   url: COMPANY.url,
-  telephone: '+19075550123',
+  telephone: COMPANY.phoneHref.replace('tel:', ''),
   email: COMPANY.email,
   description: COMPANY.tagline,
   address: {
@@ -27,7 +27,7 @@ interface SEOProps {
   title: string;
   description: string;
   canonical: string;
-  schema?: object | object[];
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 export default function SEO({ title, description, canonical, schema }: SEOProps) {

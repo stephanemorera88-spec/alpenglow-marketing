@@ -6,7 +6,7 @@ import SEO from '../seo';
 import { COMPANY } from '../config';
 
 export default function Contact() {
-  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,9 +17,9 @@ export default function Contact() {
         method: 'POST',
         body: data,
       });
-      setFormState(res.ok ? 'success' : 'idle');
+      setFormState(res.ok ? 'success' : 'error');
     } catch {
-      setFormState('idle');
+      setFormState('error');
     }
   };
 
@@ -227,6 +227,11 @@ export default function Contact() {
                         <>Send Message <Send size={20} /></>
                       )}
                     </button>
+                    {formState === 'error' && (
+                      <p className="text-center text-red-600 text-sm font-medium bg-red-50 py-3 rounded-xl">
+                        Something went wrong. Please try again or email us directly at {COMPANY.email}.
+                      </p>
+                    )}
                     <p className="text-center text-gray-400 text-sm">
                       By submitting, you agree to our privacy policy.
                     </p>

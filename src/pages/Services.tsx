@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../seo';
+import { COMPANY } from '../config';
 
 const SERVICE_IMAGES: Record<string, string> = {
   gbp: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80',
@@ -40,7 +41,8 @@ const servicesSchema = {
       description: service.description,
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Alpenglow Marketing',
+        name: COMPANY.name,
+        url: COMPANY.url,
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Anchorage',
@@ -69,6 +71,7 @@ export default function Services() {
             src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80"
             alt=""
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">

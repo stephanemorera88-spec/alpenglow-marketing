@@ -31,14 +31,6 @@
   }
 }
 
-/* ── Overlays ── */
-.dark-overlay {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
-}
-.heavy-overlay {
-  background: rgba(0,0,0,0.65);
-}
-
 /* ── Button hover shine sweep ── */
 @keyframes btn-shine {
   0% { left: -75%; }
