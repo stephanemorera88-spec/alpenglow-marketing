@@ -7,7 +7,7 @@ export const COMPANY = {
     email: 'alpenglowmarketingak@gmail.com',
     emailHref: 'mailto:alpenglowmarketingak@gmail.com',
   address: 'Anchorage, Alaska',
-  url: 'https://www.alpenglowmarketingak.com',
+    url: 'https://alpenglow-marketing.vercel.app',
   logo: '/alpenglow-logo.png',
   frontierConnectLogo: '/frontier-connect-logo.svg',
   social: {
